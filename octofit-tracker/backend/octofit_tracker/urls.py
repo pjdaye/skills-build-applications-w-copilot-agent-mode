@@ -25,5 +25,6 @@ urlpatterns = [
     path('api/activities/', views.ActivityListCreateView.as_view(), name='activity-list-create'),
     path('api/leaderboard/', views.LeaderboardListCreateView.as_view(), name='leaderboard-list-create'),
     path('api/workouts/', views.WorkoutListCreateView.as_view(), name='workout-list-create'),
+    path('api/', views.api_root, name='api-root'),
     path('', views.api_root, name='api-root'),
 ]
